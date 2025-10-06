@@ -1,7 +1,5 @@
 package com.example.basics
 
-import java.sql.DriverManager.println
-
 fun main(){
     println("Interpolación de strings")
     val nombreFallesido: String = "Leonardo"
@@ -25,7 +23,7 @@ fun main(){
     println("Conversiones")
     val edadFallecido: String = "25"
     val edadConvertida: Int = edadFallecido.toInt()
-    println("edadConvertida")
+    println("$edadConvertida")
 
     val numero: Double = 50.8
     val numeroConvertido: String = numero.toString()

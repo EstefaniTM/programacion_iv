@@ -1,6 +1,5 @@
 package com.example.basics
 
-import java.sql.DriverManager.println
 
 fun main(){
     println("!!Estructura de control!!")

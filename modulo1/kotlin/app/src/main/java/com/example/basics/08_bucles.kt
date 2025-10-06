@@ -1,6 +1,5 @@
 package com.example.myapplication
 
-import java.sql.DriverManager.println
 
 fun main(){
     println("bucles")

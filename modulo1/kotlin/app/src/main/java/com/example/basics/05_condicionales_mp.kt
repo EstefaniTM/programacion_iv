@@ -1,6 +1,5 @@
 package com.example.basics
 
-import java.sql.DriverManager.println
 
 fun main(){
     println("!!Estructura de control!!")
@@ -13,7 +12,6 @@ fun main(){
         println("Pago aceptado, proceso iniciado")
     }
 
-    println("\nRango segun nivel de la fuerza") // Added \n for better formatting
     var tamanioAtaud: Int = 170
     if(tamanioAtaud>170){
         println("Se escogera un ataud mas grande")
@@ -23,15 +21,6 @@ fun main(){
         println("Se escoge un ataud generico")
     }
 
-    println("Elemento del zodiaco, di tu signo del zodiaco")
-    var zodiaco: String = "Aries"
-    when(zodiaco){
-        "Aries","Leo","Sagitario"->print("Fuego")
-        "Tauro","Virgo","Capicornio"->print("Tierra")
-        "Geminis", "Libra", "Acuario"->print("Aire")
-        "Cancer", "Escorpio", "Cancer"->print("Agua")
-        else -> print("error")
-    }
 
     println("Di que numero de la sala de velacion y te diremos " +
             "la direccion que se encuentra")

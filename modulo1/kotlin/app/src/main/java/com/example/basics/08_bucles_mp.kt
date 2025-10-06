@@ -1,6 +1,5 @@
 package com.example.myapplication
 
-import java.sql.DriverManager.println
 
 fun main(){
     println("bucles")
@@ -8,15 +7,16 @@ fun main(){
     for ((index,salasFuneral) in salasFuneral.withIndex()){
         println("${index+1}.$salasFuneral")
     }
-    // rangos de paso
-    for (i in 0 .. 20 step 5){
-        println("energia: $i%")
+
+    for (tamaño in 100..200 step 25) {
+        println("Ataúd de $tamaño cm - Precio: $${tamaño * 5}")
     }
-    //rangos descendentes
-    for (countdown in 10 downTo 1){
-        println("Despegue en: $countdown")
+
+    for (minuto in 10 downTo 1) {
+        println("La ceremonia termina en $minuto minutos...")
     }
-    
+    println("La velación ha concluido. 🙏")
+
     for (salaFuneral in salasFuneral){
         if (salaFuneral=="D-11")continue
         if (salaFuneral=="D13")break
