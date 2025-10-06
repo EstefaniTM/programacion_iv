@@ -23,5 +23,3 @@ fun main() {
     println("¿nombre1 y nombre2 son el mismo objeto? ${nombre1 === nombre2}") // true, Kotlin reutilizó el objeto
     println("¿nombre1 y nombre3 son el mismo objeto? ${nombre1 === nombre3}") // false, nombre3 es un objeto nuevo
 }
-
-

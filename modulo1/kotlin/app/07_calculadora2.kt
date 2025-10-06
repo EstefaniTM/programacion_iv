@@ -1,5 +1,3 @@
-package com.example.basics
-
 import kotlin.text.toIntOrNull
 import kotlin.text.uppercase
 
