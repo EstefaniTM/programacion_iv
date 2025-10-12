@@ -2,18 +2,15 @@ package com.example.basics
 
 fun main(){
     println("Listas")
-    // CORRECTION 1: The type 'List' starts with a capital L
     val inmutableLista: List<Int> = listOf(1, 2, 3)
-    println("Lista Inmutable: ${inmutableLista}") // Corrected the text slightly
+    println("Lista Inmutable: ${inmutableLista}")
 
-    // CORRECTION 2: The type 'MutableList' starts with a capital M
     val mutableLista: MutableList<Int> = mutableListOf(4, 5, 6)
-    println("Lista Mutable (inicial): ${mutableLista}") // Corrected the text
+    println("Lista Mutable (inicial): ${mutableLista}")
 
     mutableLista.add(7)
     println("Lista Mutable (después de añadir): ${mutableLista}")
 
-    // CORRECTION 3 (THE MAIN ERROR): Removed "index:" from the function call
     mutableLista.removeAt(0)
     println("Lista Mutable (después de remover el índice 0): ${mutableLista}")
 
