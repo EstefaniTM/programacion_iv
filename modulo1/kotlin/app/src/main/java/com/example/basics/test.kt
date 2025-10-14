@@ -1,25 +1,24 @@
-
 package com.example.basics
 
 fun main() {
-    println("Ingrese su promedio")
-    var promedio: Int = readln()?.toIntOrNull()?:0
-    println("Tiene trabajo?")
-    var trabaja: Boolean = readln()?.toBoolean() ?: false
+    var energia = 100
+    print("Número de etapas: ")
+    val etapas = readln().toInt()
 
-    when{
-        promedio >= 90 && trabaja == false->print("Beca completa")
-        promedio >= 90 && trabaja == true->print("Beca parcia")
-        promedio < 90->print("Sin beca")
+    for (etapa in 1..etapas) {
+        val terreno = (1..3).random()
+
+        when (terreno) {
+            1 -> energia -= 5
+            2 -> energia -= 10
+            3 -> energia -= 15
+        }
+
+        if (energia <= 0) {
+            println("Abandona en etapa $etapa")
+            return
+        }
     }
 
-    println("Ingresa una hora 0-23")
-    var hora : Int = readln()?.toIntOrNull()?:0
-    when{
-        hora == 7 && hora == 13->println("Clases en la mañana")
-        hora == 14 && hora == 19->println("clases en la tarde")
-        else->println("Horario lectivo")
-    }
+    println("Rally completado con energía $energia")
 }
-
-
