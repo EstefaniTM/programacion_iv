@@ -16,6 +16,11 @@ android {
         versionCode = 1
         versionName = "1.0"
     }
+
+    // Add this block to enforce a consistent Java version for the whole project
+    kotlin {
+        jvmToolchain(17)
+    }
 }
 
 dependencies {
