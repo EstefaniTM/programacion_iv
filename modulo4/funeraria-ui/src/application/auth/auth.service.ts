@@ -8,6 +8,6 @@ export const authService = {
   },
 
   async register(payload: RegisterPayload): Promise<void> {
-    await publicHttp.post("/pi/auth/registro", payload);
+    await publicHttp.post("/auth/register", payload);
   }
 };
